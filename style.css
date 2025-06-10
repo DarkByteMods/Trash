@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fdfdfd;
+}
+
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #32004d, #ff007f);
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  border-color: #ff00cc;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in;
+  z-index: 2;
+  position: relative;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1px solid #ffffff22;
+}
+
+button {
+  background: linear-gradient(135deg, #ff00cc, #6600ff);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+ul li {
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+ul li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(15px);}
+  to {opacity: 1; transform: translateY(0);}
+}
