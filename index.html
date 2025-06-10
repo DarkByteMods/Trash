@@ -7,13 +7,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="#/upload">Upload</a>
-    <a href="#/script">Script List</a>
-  </nav>
+  <canvas id="comet-bg"></canvas>
 
-  <main id="app"></main>
+  <div class="overlay">
+    <nav>
+      <a href="#/upload">Upload</a>
+      <a href="#/script">Script List</a>
+    </nav>
+    <main id="app"></main>
+  </div>
 
+  <script src="comet.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
